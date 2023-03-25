@@ -96,9 +96,11 @@
                 font-size: 30px;
             }
         }
+
         h3 {
             font-family: 'Moulpali', cursive;
         }
+
         .footer {
             padding: 2rem 0;
             border-top: 1px solid #eaeaea;
@@ -233,11 +235,24 @@
 </head>
 
 <body>
-
-    <!-- header -->
-    <div style="padding: 10px;text-align: center;" onScroll="myFunction()">
-        <h3 class="title">ចាប៉ីដងវែង</h3>
-    </div>
+    <div style=" display: flex;justify-content: space-between;">
+        <h3 style="font-size: 20px;">ចាប៉ីដងវែង</h3>
+        <button style=" 
+        width: 70px;
+        padding: 5px;
+        border: none;
+        border-radius: 4px;
+        margin: 5px 0;
+        opacity: 0.85;
+        display: inline-block;
+        font-size: 17px;
+        line-height: 20px;
+        text-decoration: none;
+        background-color: #55ACEE;
+       " type="button">
+            <a style="text-decoration: none; color: #FFF;" href="./login.html">Login</a>
+        </button>
+    </div><br>
 
     <!-- slider img -->
     <div class="slideshow-container">
@@ -414,8 +429,45 @@
 
 
     <footer class="footer">
+        <!-- menu -->
+        <div>
+            <ul style="
+    font-family: 'Roboto', sans-serif; list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+">
+                <li style="float: left;">
+                    <a style="display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;" href="./index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li style="float: left;">
+                    <a style="display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;" href="./about.html">
+                        About
+                    </a>
+                </li>
+
+                <li style="float: left;">
+                    <a style="display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;" href="./contact.html">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div><br>
+
         <div style="display: flex;justify-content: space-between;">
-            <p style="font-family: 'Roboto', sans-serif;"> Powered by SEIREY Leanghak • &copy; 2021</p>
+            <p style="font-family: 'Roboto', sans-serif;"> Powered by SEIREY Leanghak • &copy; 2021,</p>
             <span>
                 <p>ទំនាក់ទំនងតាមរយះ</p>
                 <a style=" text-decoration: none;" href="https://www.facebook.com/sleanghak?mibextid=ZbWKwL"
@@ -431,6 +483,7 @@
 
             </span>
         </div>
+
     </footer>
 
 

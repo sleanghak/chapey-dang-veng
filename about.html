@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Link google fonts khmer Moulpali -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Moulpali&display=swap" rel="stylesheet">
+    <!-- Link google fonts english Barlow -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+    <!-- Link google fonts khmer Freehand -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freehand&display=swap" rel="stylesheet">
+    <!-- header use for display logo  -->
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3573/3573187.png">
+    <title>ចាប៉ីដងវែង</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #25265EB3;
+        }
+
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            body {
+                font-size: 13px;
+                margin-left: 2.5%;
+                margin-right: 2.5%;
+            }
+
+            .title {
+                font-size: 23px;
+            }
+
+            .col {
+                padding: 0px;
+            }
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+            body {
+                font-size: 13px;
+                margin-left: 4%;
+                margin-right: 4%;
+            }
+
+            .title {
+                font-size: 30px;
+            }
+
+            .col {
+                padding: 0px 10px 0px 10px;
+            }
+        }
+
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            body {
+                font-size: 15px;
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+
+            .title {
+                font-size: 30px;
+            }
+
+            .col {
+                padding: 0px 10px 0px 10px;
+            }
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            body {
+                font-size: 15px;
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+
+            .title {
+                font-size: 30px;
+            }
+
+            .col {
+                padding: 0px 10px 0px 10px;
+            }
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+            body {
+                font-size: 15px;
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+
+            .title {
+                font-size: 30px;
+            }
+
+            .col {
+                padding: 0px 10px 0px 10px;
+            }
+        }
+
+        /* style for from message */
+
+        input[type=text],
+        input[type=email],
+        .formstyle textarea,
+        .formstyle select {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        input[type=text]:focus,
+        input[type=email]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+
+        .formstyle textarea {
+            resize: none;
+            overflow: hidden;
+        }
+
+        #form1 {
+            overflow: hidden;
+            padding: 10%;
+            position: relative;
+        }
+
+        #form1 .read-more {
+            flex-direction: row;
+        }
+
+        .button {
+            /* width: 100%; */
+            padding: 14px;
+            border: none;
+            border-radius: 4px;
+            margin: 5px 0;
+            opacity: 0.85;
+            display: inline-block;
+            font-size: 17px;
+            line-height: 20px;
+            text-decoration: none;
+            background-color: #55ACEE;
+            color: white;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #349ae7;
+        }
+
+
+        /* style inputs and link buttons */
+
+        .col {
+            float: left;
+            width: 50%;
+            margin: auto;
+            margin-top: 6px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* hide some text on medium and large screens */
+        .hide-md-lg {
+            display: none;
+        }
+
+
+        /* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 650px) {
+            .col {
+                width: 100%;
+                margin-top: 0;
+            }
+
+            /* show the hidden text on small screens */
+            .hide-md-lg {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        .footer {
+            padding: 2rem 0;
+            border-top: 1px solid #eaeaea;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style=" display: flex;justify-content: space-between;">
+        <h3 style="font-size: 20px;font-family: 'Moulpali', cursive;">ចាប៉ីដងវែង</h3>
+        <button style=" 
+        width: 70px;
+        padding: 5px;
+        border: none;
+        border-radius: 4px;
+        margin: 5px 0;
+        opacity: 0.85;
+        display: inline-block;
+        font-size: 17px;
+        line-height: 20px;
+        text-decoration: none;
+        background-color: #55ACEE;
+       " type="button">
+            <a style="text-decoration: none; color: #FFF;" href="./login.html">Login</a>
+        </button>
+    </div><br>
+    <div class="container">
+        <form>
+            <div class="row">
+                <h1 class="title"
+                    style="text-align:center; text-transform: uppercase;font-family: 'Barlow', sans-serif;">About Myself
+                </h1>
+                <br><br>
+
+                <div class="col">
+                    <img style="width: 100%;border-radius: 5px;" src="./1668931860073.jpg" alt="profile">
+                </div>
+
+                <div class="col">
+                    <h3 style="font-family: 'Barlow', sans-serif;">About Myself</h3>
+                    <p style=" text-indent: 40px;">
+                        I'm Seirey Leanghak. I was born in Kandal province in 2003. My goal is to keep getting better.
+                        I'll use what I learn to create something practical for our everyday lives. Specifically, I wish
+                        to fulfill my potential as a Full Stack Developer.
+                    </p><br>
+                    <p style=" text-indent: 40px;">
+                        Currently, I'm a first-year student majoring in information technology at Roya University in
+                        Phnom Penh. I looked at a lot of different artifacts, and they are all really intricate. I
+                        successfully completed every significant topic in my first year.
+                    </p>
+                    <br>
+                    <div>
+                        <h3 style="font-family: 'Barlow', sans-serif;">Contact Me</h3>
+
+                        <ul style="margin-left:25px;">
+                            <li>Gmail : sleanghak@gmail.com</li>
+                            <li>Phone : (+855) 87 84 19 63</li>
+                            <li>Telegram : <a href="https://t.me/SEIREY_Leanghak"> @SEIREY_Leanghak</a></li>
+                            <li>Address : Sangkat Toek L'ak III, Khan Toul Kork, Phnom Penh </li>
+                        </ul>
+                    </div><br>
+                    <div>
+                        <h3 style="font-family: 'Barlow', sans-serif;">Skill</h3>
+
+                        <ul style="margin-left:25px;">
+                            <li>Computer Programming: C, JavaScript,TypeScript</li>
+                            <li>Web Development : HTML, CSS, Bootstrap,Tailwind CSS, Material-UI , StoryBook, Atomic
+                                Design, React, Next.JS, </li>
+                            <li>Web Service : Email JS, Firebase </li>
+                            <li>Version Control System(VCS) : GitHub, Bitbucket</li>
+                            <li>Collaboration tool : Trello, Jira</li>
+                            <li>Design tool : Figma, Canva</li>
+                            <li>Good communication Skill</li>
+                            <li>Leadership and mentorship skill</li>
+                        </ul>
+                    </div><br>
+
+                    <div>
+                        <h3 style="font-family: 'Barlow', sans-serif;">Language</h3>
+
+                        <ul style="margin-left:25px;">
+                            <li>Khmer : Mother tongue</li>
+                            <li>English: Medium </li>
+                        </ul>
+                    </div><br>
+
+                    <div>
+                        <h3 style="font-family: 'Barlow', sans-serif;">Education</h3>
+
+                        <ul style="margin-left:25px;">
+                            <li>2020 - Until now: pursuing a bachelor's degree in information technology at RUPP.</li>
+                            <li>2017 - 2020 : High School Diploma at Krang Yov high school </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div><br>
+
+    <footer class="footer">
+        <!-- menu -->
+
+        <div>
+            <ul style="
+        font-family: 'Roboto', sans-serif; list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    ">
+                <li style="float: left;">
+                    <a style="display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;" href="./index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li style="float: left;">
+                    <a style="display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;" href="./about.html">
+                        About
+                    </a>
+                </li>
+
+                <li style="float: left;">
+                    <a style="display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;" href="./contact.html">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div><br>
+        <div style="display: flex;justify-content: space-between;">
+            <p style="font-family: 'Roboto', sans-serif;"> Powered by SEIREY Leanghak • &copy; 2021,</p>
+            <span>
+                <p style=" font-family: 'Freehand', cursive;">ទំនាក់ទំនងតាមរយះ</p>
+                <a style=" text-decoration: none;" href="https://www.facebook.com/sleanghak?mibextid=ZbWKwL"
+                    target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/20/20837.png" alt="facebook" width="20px"
+                        height="20x">
+                </a>
+                <a style="margin-left: 10px; text-decoration: none;" href="https://t.me/SEIREY_Leanghak"
+                    target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4423/4423446.png" alt="telegram" width="20px"
+                        height="20x">
+                </a>
+
+            </span>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
